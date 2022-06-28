@@ -14,8 +14,9 @@ jobs:
       # скрпит для развертывания окружения Python
       - name: Set up Python
         uses: actions/setup-python@v2
-          # Выбираем версию
-        with: python-version: 3.7
+        with:
+        # Выбор версии Python
+          python-version: 3.7
 
       - name: Install depence
         run : |
