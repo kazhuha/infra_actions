@@ -3,7 +3,7 @@ name: Django-app worlfow
 on: [push]
 
 jobs:
-  # название блока
+  # название
   tests:
     # "раннер" - создаём изолированное окружение
     runs-on: ubuntu-latest
