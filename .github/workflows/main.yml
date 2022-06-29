@@ -60,7 +60,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ PASSPHRASE }}
+          passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker pull kazhuha/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
