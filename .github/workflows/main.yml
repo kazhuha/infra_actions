@@ -3,19 +3,13 @@ name: Django-app worlfow
 on: [push]
 
 jobs:
-  # название 
   tests:
-    # "раннер" - создаём изолированное окружениею
     runs-on: ubuntu-latest
-    # перечень шагов
     steps:
-      # скрпит для клонирования репозитоия (вместо uses можно использовать run)
       - uses: actions/checkout@v2
-      # скрпит для развертывания окружения Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-        # Выбор версии Pythond
           python-version: 3.7
 
       - name: Install depence
